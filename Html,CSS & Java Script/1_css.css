@@ -1,0 +1,92 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSS Basics - All Tasks</title>
+  <style>
+    /* 1. CSS Comments */
+    /* This is a single-line comment */
+    /*
+      This is a multi-line comment
+    */
+
+    /* 2. Background color and image */
+    body {
+      background-color: lightblue;
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2m9HVT0eZVX3_mRqEg4hEduCBRWFA_PXCsg&s'); 
+      background-attachment: fixed;
+      background-size: 150px 150px;
+      font-family: times new roman;
+      margin: 20px;
+    }
+
+    /* 3. Different Borders */
+    .border-box {
+      border-top: 5px dashed red;
+      border-right: 5px solid blue;
+      border-bottom: 5px dotted green;
+      border-left: 5px double black;
+      padding: 20px;
+      width: 300px;
+      background-color: white;
+      margin-bottom: 20px;
+    }
+
+    /* 4. Height and Width */
+    .box1 {
+      height: 200px;
+      width: 50%;
+      background-color: coral;
+      margin-bottom: 20px;
+    }
+
+    .box2 {
+      height: 100px;
+      width: 300px;
+      background-color: lightgreen;
+      margin-bottom: 20px;
+    }
+
+    /* 5. Font styles */
+    .text-style {
+      font-style: italic;
+      font-size: 20px;
+      font-family: Arial, sans-serif;
+      color: darkblue;
+      text-align: center;
+      background-color: white;
+      padding: 10px;
+    }
+
+    h2 {
+      margin-top: 40px;
+      color: darkslategray;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>CSS Basics </h1>
+
+  <!--  2 -->
+  <h2>2. Background Color and Background Image</h2>
+  <p>This page has a background color and a fixed background image.</p>
+
+  <!--  3 -->
+  <h2>3. Different Borders on Each Side</h2>
+  <div class="border-box">
+    This box has different border styles on each side.
+  </div>
+
+  <!-- Task 4 -->
+  <h2>4. Set Height and Width</h2>
+  <div class="box1">Box 1: 200px height, 50% width</div>
+  <div class="box2">Box 2: 100px height, 300px width</div>
+
+  <!-- Task 5 -->
+  <h2>5. Font Styles</h2>
+  <p class="text-style">This text uses custom font-style, size, family, color, and alignment.</p>
+
+</body>
+</html>
