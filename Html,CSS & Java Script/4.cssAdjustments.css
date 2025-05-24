@@ -1,0 +1,83 @@
+
+
+<!DOCTYPE html>
+<head>
+  
+  <style>
+    /* 1. Table with black border and hover color change */
+    table {
+      border: 2px solid black;
+      width: 50%;
+      margin-bottom: 20px;
+    }
+    table:hover {
+      background-color: #f0f0f0;
+    }
+
+    /* 2. Visibility and Display */
+    .visibility-test {
+      visibility: hidden; /* Try: visible, collapse */
+    }
+
+    .display-test {
+      display: none; /* Try: inline, block, contents, list-item */
+    }
+
+    /* 3. Smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* 4. Padding vs Margin */
+    .padding-box {
+      padding: 20px;
+      background-color: lightblue;
+    }
+
+    .margin-box {
+      margin: 20px;
+      background-color: lightgreen;
+    }
+
+    /* 5. Multiple Backgrounds */
+    .multi-bg {
+      height: 200px;
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAoQQX2CWLJKWc_dIDs8KQ8KLae-XfEAsgFg&s'), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAoQQX2CWLJKWc_dIDs8KQ8KLae-XfEAsgFg&s');
+      background-size: 150px 150px, 100px 100px;
+      background-repeat: no-repeat;
+      background-position: left top, right bottom;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>1. Table with Hover Effect</h2>
+  <table>
+    <tr><th>Name</th><th>Age</th></tr>
+    <tr><td>Alice</td><td>25</td></tr>
+    <tr><td>Bob</td><td>30</td></tr>
+  </table>
+
+  <h2>2. Visibility and Display</h2>
+  <div class="visibility-test">This is invisible using visibility.</div>
+  <div class="display-test">This is hidden using display.</div>
+
+  <h2>3. Long Page with Scroll Links</h2>
+  <a href="#bottom">Go to Bottom</a> |
+  <a href="#top">Go to Top</a>
+
+  <div style="height: 800px;"></div>
+
+  <div id="bottom"><h3>This is the bottom of the page.</h3></div>
+  <div id="top"></div>
+
+  <h2>4. Padding and Margin</h2>
+  <div class="padding-box">Padding Box</div>
+  <div class="margin-box">Margin Box</div>
+
+  <h2>5. Multiple Backgrounds</h2>
+  <div class="multi-bg"></div>
+
+</body>
+</html>
+

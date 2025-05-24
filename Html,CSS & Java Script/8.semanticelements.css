@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head>
+    <title>HTML5 Semantic Elements Example</title>
+    <style>
+        div, span {
+            border: 1px solid #ccc;
+            padding: 5px;
+            margin: 5px;
+        }
+        section, article, aside, nav, header, footer {
+            border: 1px solid #333;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        mark {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Non-Semantic Elements</h1>
+    <div>
+        This is a <span>non-semantic</span> section using &lt;div&gt; and &lt;span&gt;.
+    </div>
+
+    <hr>
+
+    <h1>Semantic Elements</h1>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <button type="submit">Submit</button>
+    </form>
+
+    <table border="1">
+        <caption>User Info</caption>
+        <tr>
+            <th>Name</th><th>Email</th>
+        </tr>
+        <tr>
+            <td>Alice</td><td>alice@example.com</td>
+        </tr>
+    </table>
+
+    <article>
+        <h2>Article Title</h2>
+        <p>This is a semantic article element.</p>
+    </article>
+
+    <hr>
+
+    <h1>HTML5 Semantic Tags</h1>
+    <header>
+        <hgroup>
+            <h1>Website Title</h1>
+            <h2>Subtitle</h2>
+        </hgroup>
+        <nav>
+            <a href="#">Home</a> |
+            <a href="#">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Main Section</h2>
+            <article>
+                <h3>News Article</h3>
+                <p>This is a sample news article. <mark>Important part</mark> of the text.</p>
+                <time datetime="2025-05-23">May 23, 2025</time>
+            </article>
+        </section>
+
+        <aside>
+            <h2>Sidebar</h2>
+            <p>Additional information goes here.</p>
+        </aside>
+
+        <figure>
+            <img src="https://via.placeholder.com/150" alt="Placeholder image">
+            <figcaption>Sample Image</figcaption>
+        </figure>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Example Site</p>
+    </footer>
+
+</body>
+</html>

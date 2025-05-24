@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Effects Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    /* 1. Shadow Effects */
+    .image-box {
+      width: 200px;
+      height: 200px;
+      background-color: lightblue;
+      box-shadow: 5px 5px 15px gray;
+      transition: box-shadow 0.3s;
+    }
+
+    .image-box:hover {
+      box-shadow: 10px 10px 25px darkgray;
+    }
+
+    /* 2. CSS Animation */
+    .animated-box {
+      width: 100px;
+      height: 100px;
+      background-color: coral;
+      animation-name: slide;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-delay: 1s;
+    }
+
+    @keyframes slide {
+      0% { transform: translateX(0); }
+      50% { transform: translateX(100px); }
+      100% { transform: translateX(0); }
+    }
+
+    .pagination span {
+      padding: 8px 12px;
+      margin: 2px;
+      background-color: #eee;
+      display: inline-block;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .pagination span:hover {
+      background-color: #bbb;
+    }
+
+    /* 3. CSS Positions */
+    .position-box {
+      position: relative;
+      width: 300px;
+      height: 100px;
+      background-color: lightgreen;
+    }
+
+    .absolute-box {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: darkgreen;
+      color: white;
+      padding: 5px;
+    }
+
+    .sticky-box {
+      position: sticky;
+      top: 0;
+      background: yellow;
+      padding: 10px;
+    }
+
+    /* 4. Overflow Handling */
+    .scroll-box {
+      width: 300px;
+      height: 100px;
+      overflow: scroll;
+      background: #f0f0f0;
+      border: 1px solid #ccc;
+    }
+
+    /* 5. Opacity */
+    .opacity-img {
+      width: 200px;
+      height: 100px;
+      background-color: purple;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>1. Shadow Effect</h2>
+  <div class="image-box"></div>
+
+  <h2>2. CSS Animation & Pagination</h2>
+  <div class="animated-box"></div>
+  <div class="pagination">
+    <span>1</span><span>2</span><span>3</span><span>4</span>
+  </div>
+
+  <h2>3. Positioning</h2>
+  <div class="sticky-box">Sticky Header</div>
+  <div class="position-box">
+    <div class="absolute-box">Absolute Box</div>
+  </div>
+
+  <h2>4. Overflow Scroll</h2>
+  <div class="scroll-box">
+    <p>AQSWDEFRTGYHJUIKLOPMNBVCXZZAQXSWCDEVFRBGTNHYMUUKIJLOPQAZXSCWDEFHRUIUIYGHUIYUWIWOHJVGUILKJKJGUFYIUKJDCHUIUOI9FIYIJKHJGGYYDTSTGXOIDHLKJOIOPIYUIUJBVHJUIMVKMNBJHC;OCKK.JBCIYCOILKCJBJYGUYTIUJKNVH.</p>
+  </div>
+
+  <h2>5. Opacity</h2>
+  <div class="opacity-img"></div>
+
+</body>
+</html>
