@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Compatibility Tasks</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: center;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .grid div {
+      background-color: lightcoral;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .hero {
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAoQQX2CWLJKWc_dIDs8KQ8KLae-XfEAsgFg&s');
+      height: 300px;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .responsive-text {
+      margin: 20px 0;
+    }
+
+    @media (max-width: 600px) {
+      .responsive-text {
+        font-size: 14px;
+        color: darkblue;
+      }
+    }
+
+    @media (min-width: 601px) {
+      .responsive-text {
+        font-size: 20px;
+        color: darkgreen;
+      }
+    }
+
+    img, video {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>1</h2>
+  <table style="table-layout: fixed;">
+    <tr><th>Fixed</th><th>Layout</th></tr>
+    <tr><td>Content A</td><td>Content B</td></tr>
+  </table>
+
+  <table style="table-layout: auto;">
+    <tr><th>Auto</th><th>Layout</th></tr>
+    <tr><td>Longer Content Here</td><td>Short</td></tr>
+  </table>
+
+  <h2>2</h2>
+  <ul style="list-style-type: square;">
+    <li>Square List Item</li>
+    <li>Another Item</li>
+  </ul>
+  <ol style="list-style-type: upper-roman;">
+    <li>Roman Item I</li>
+    <li>Roman Item II</li>
+  </ol>
+
+  <h2>3</h2>
+  <div class="grid">
+    <div>Grid Box 1</div>
+    <div>Grid Box 2</div>
+    <div>Grid Box 3</div>
+  </div>
+
+  <h2>4</h2>
+  <div class="hero">
+    Hero Section
+  </div>
+
+  <h2>5</h2>
+  <div class="responsive-text">This text size changes based on screen width.</div>
+
+  <div class="grid">
+    <div>Responsive Grid A</div>
+    <div>Responsive Grid B</div>
+  </div>
+
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAoQQX2CWLJKWc_dIDs8KQ8KLae-XfEAsgFg&s">
+
+  <video controls>
+    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    Your browser does not support video playback.
+  </video>
+
+</body>
+</html>
